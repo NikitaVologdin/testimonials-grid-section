@@ -91,121 +91,121 @@ section {
   grid-template-areas: "one" "two" "three" "four" "five";
   gap: 1.5rem;
 }
-section article {
+section .article {
   max-width: 20.4375rem;
   padding: 1.625rem 2rem;
   border-radius: 0.5rem;
   filter: drop-shadow(rgba(72, 85, 106, 0.1294117647) 5px 10px 10px);
 }
-section article .author {
+section .article .author {
   font-weight: 500;
   display: flex;
   gap: 1.0625rem;
 }
-section article .author img {
+section .article .author img {
   border-radius: 50%;
 }
-section article .author div {
+section .article .author div {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
-section article .author .author__name {
+section .article .author .author__name {
   color: hsl(0, 0%, 100%);
   line-height: 0.8125rem;
   font-size: 0.8125rem;
 }
-section article .author .author__status {
+section .article .author .author__status {
   color: hsl(0, 0%, 81%);
   line-height: 0.6875rem;
   font-size: 0.6875rem;
 }
-section article .article__message {
+section .article .article__message {
   margin-top: 1.125rem;
 }
-section article .article__message strong {
+section .article .article__message strong {
   font-weight: 600;
   font-size: 1.25rem;
 }
-section article .article__body {
+section .article .article__body {
   margin-top: 1rem;
 }
-section article .article__body blockquote {
+section .article .article__body blockquote {
   line-height: 1.1125rem;
   font-weight: 500;
   font-size: 0.8125rem;
 }
-section article:nth-child(1) {
+section .article:nth-child(1) {
   position: relative;
   background-color: hsl(263, 55%, 52%);
   grid-area: one;
   z-index: 0;
 }
-section article:nth-child(1) .avatar {
+section .article:nth-child(1) .avatar {
   outline: solid #A775F1 0.125rem;
 }
-section article:nth-child(1) strong {
+section .article:nth-child(1) strong {
   color: hsl(0, 0%, 100%);
 }
-section article:nth-child(1) .article__body {
+section .article:nth-child(1) .article__body {
   margin-top: 2.5rem;
 }
-section article:nth-child(1) blockquote {
+section .article:nth-child(1) blockquote {
   color: hsl(0, 0%, 81%);
 }
-section article:nth-child(1) .quatation_svg {
+section .article:nth-child(1) .quatation_svg {
   position: absolute;
   z-index: -1;
   top: 0;
   right: 1.5rem;
 }
-section article:nth-child(2) {
+section .article:nth-child(2) {
   background-color: hsl(217, 19%, 35%);
   grid-area: two;
 }
-section article:nth-child(2) strong {
+section .article:nth-child(2) strong {
   color: hsl(0, 0%, 100%);
 }
-section article:nth-child(2) blockquote {
+section .article:nth-child(2) blockquote {
   color: hsl(0, 0%, 81%);
 }
-section article:nth-child(3) {
+section .article:nth-child(3) {
   background-color: white;
   grid-area: three;
 }
-section article:nth-child(3) .author__name {
+section .article:nth-child(3) .author__name {
   color: hsl(219, 29%, 14%);
 }
-section article:nth-child(3) strong {
+section .article:nth-child(3) strong {
   color: hsl(217, 19%, 35%);
 }
-section article:nth-child(3) blockquote {
+section .article:nth-child(3) blockquote {
   color: hsl(217, 19%, 35%);
 }
-section article:nth-child(4) {
+section .article:nth-child(4) {
   background-color: hsl(219, 29%, 14%);
   grid-area: four;
 }
-section article:nth-child(4) .avatar {
+section .article:nth-child(4) .avatar {
   outline: solid #A775F1 0.125rem;
 }
-section article:nth-child(4) strong {
+section .article:nth-child(4) strong {
   color: hsl(0, 0%, 100%);
 }
-section article:nth-child(4) blockquote {
+section .article:nth-child(4) blockquote {
   color: hsl(0, 0%, 81%);
 }
-section article:nth-child(5) {
+section .article:nth-child(5) {
   background-color: hsl(0, 0%, 100%);
   grid-area: five;
 }
-section article:nth-child(5) .author__name {
+section .article:nth-child(5) .author__name {
   color: hsl(219, 29%, 14%);
 }
-section article:nth-child(5) strong {
+section .article:nth-child(5) strong {
   color: hsl(217, 19%, 35%);
 }
-section article:nth-child(5) blockquote {
+section .article:nth-child(5) blockquote {
   color: hsl(217, 19%, 35%);
 }
 
@@ -226,28 +226,28 @@ section article:nth-child(5) blockquote {
     grid-tamplate-rows: 1fr 1fr;
     grid-template-areas: "one one two five" "three four four five";
   }
-  section article {
+  section .article {
     max-width: 540px;
   }
-  section article strong {
+  section .article strong {
     line-height: 5px;
   }
-  section article:nth-child(1) .quatation_svg {
+  section .article:nth-child(1) .quatation_svg {
     right: 5rem;
   }
-  section article:nth-child(1) .article__message, section article:nth-last-child(2) .article__message {
+  section .article:nth-child(1) .article__message, section .article:nth-last-child(2) .article__message {
     margin-top: 1.125rem;
   }
-  section article:nth-child(1) .article__body, section article:nth-last-child(2) .article__body {
+  section .article:nth-child(1) .article__body, section .article:nth-last-child(2) .article__body {
     margin-top: 1rem;
   }
-  section article:nth-child(3) .article__message, section article:nth-child(4) .article__message, section article:nth-child(5) .article__message {
+  section .article:nth-child(3) .article__message, section .article:nth-child(4) .article__message, section .article:nth-child(5) .article__message {
     margin-top: 1.125rem;
   }
-  section article:nth-child(3) .article__body, section article:nth-child(4) .article__body, section article:nth-child(5) .article__body {
+  section .article:nth-child(3) .article__body, section .article:nth-child(4) .article__body, section .article:nth-child(5) .article__body {
     margin-top: 1.5rem;
   }
-  section article .author .author__status {
+  section .article .author .author__status {
     margin-top: 1px;
   }
 }
