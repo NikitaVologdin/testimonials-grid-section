@@ -21,7 +21,7 @@ section
     display: grid
     grid-template-areas: "one" "two" "three" "four" "five"
     gap: 1.5rem
-    article
+    .article
         max-width: 20.4375rem
         padding: 1.625rem 2rem
         border-radius: .5rem
@@ -141,7 +141,7 @@ section
         grid-template-columns: 1fr 1fr 1fr 1fr
         grid-tamplate-rows: 1fr 1fr
         grid-template-areas: "one one two five" "three four four five"
-        article
+        .article
             max-width: 540px
             strong
                 line-height: 5px
@@ -162,15 +162,3 @@ section
                 .author__status
                     margin-top: 1px
 
-                
-        // &:nth-child(1)
-        //     .article__body
-            
-
-
-// @media screen and (min-width: 48rem)
-//     section
-//         padding: 10rem
-//         grid-template-columns: 1fr 1fr 1fr
-//         grid-tamplate-rows: 1fr 1fr 1fr
-//         grid-template-areas: "one one two" "three four four" "five five five"
