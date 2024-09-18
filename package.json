@@ -1,0 +1,19 @@
+{
+  "name": "testimonials-grid-section",
+  "version": "1.0.0",
+  "description": "Testimonials grid section",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.78.0"
+  },
+  "license": "ISC"
+}

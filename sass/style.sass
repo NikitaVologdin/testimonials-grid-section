@@ -1,0 +1,176 @@
+@import _variables
+
+body, html
+    height: 100%
+
+body
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    font-family: "Barlow Semi Condensed", system-ui
+    background-color: #ECF2F8
+
+main
+    display: grid
+    place-content: center
+    flex-grow: 1
+
+section
+    padding: 3rem 0
+    display: grid
+    grid-template-areas: "one" "two" "three" "four" "five"
+    gap: 1.5rem
+    article
+        max-width: 20.4375rem
+        padding: 1.625rem 2rem
+        border-radius: .5rem
+        filter: drop-shadow(#48556a21 5px 10px 10px)
+
+        .author
+            font-weight: 500
+            display: flex
+            gap: 1.0625rem
+
+            img
+                border-radius: 50%
+            
+            div
+                display: flex
+                flex-direction: column
+                gap: .25rem
+        
+            .author__name
+                color: $white
+                line-height: 0.8125rem
+                font-size: 0.8125rem
+            .author__status
+                color: $light-gray
+                line-height: 0.6875rem
+                font-size: 0.6875rem
+
+        .article__message
+            margin-top: 1.125rem
+
+            strong
+                font-weight: 600
+                font-size: 1.25rem
+
+        .article__body
+            margin-top: 1rem
+        
+            blockquote
+                line-height: 1.1125rem
+                font-weight: 500
+                font-size: 0.8125rem
+            
+
+        &:nth-child(1)
+            position: relative
+            background-color: $moderate-violet
+            grid-area: one
+            // border: 1px solid #A775F1
+            z-index: 0
+            .avatar
+                outline: solid #A775F1 0.125rem
+
+            strong
+                color: $white
+            .article__body
+                margin-top: 2.5rem
+            blockquote
+                color: $light-gray
+            .quatation_svg
+                position: absolute
+                z-index: -1
+                top: 0
+                right: 1.5rem
+
+        &:nth-child(2)
+            background-color: $very-dark-grayish-blue
+            grid-area: two
+            // border: 1px solid #979797
+            strong
+                color: $white
+            blockquote
+                color: $light-gray
+
+        &:nth-child(3)
+            background-color: white
+            grid-area: three
+            .author__name
+                color: $very-dark-blackish-blue
+            strong
+                color: $very-dark-grayish-blue
+            blockquote
+                color: $very-dark-grayish-blue
+
+        &:nth-child(4)
+            background-color: $very-dark-blackish-blue
+            grid-area: four
+            // border: 1px solid #979797
+            .avatar
+                outline: solid #A775F1 0.125rem
+            strong
+                color: $white
+            blockquote
+                color: $light-gray
+        &:nth-child(5)
+            background-color: $white
+            grid-area: five
+            // border: 1px solid #979797
+            .author__name
+                color: $very-dark-blackish-blue
+            strong
+                color: $very-dark-grayish-blue
+            blockquote
+                color: $very-dark-grayish-blue   
+
+.attribution
+    font-size: 11px
+    text-align: center
+    padding: 7px
+
+.attribution a
+    color: hsl(228, 45%, 44%)
+
+// 90rem
+@media screen and (min-width: 90rem)
+    section
+        padding: 0 10rem
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-tamplate-rows: 1fr 1fr
+        grid-template-areas: "one one two five" "three four four five"
+        article
+            max-width: 540px
+            strong
+                line-height: 5px
+            &:nth-child(1)
+                .quatation_svg
+                    right: 5rem
+            &:nth-child(1), &:nth-last-child(2)
+                .article__message
+                    margin-top: 1.125rem
+                .article__body
+                    margin-top: 1rem
+            &:nth-child(3), &:nth-child(4), &:nth-child(5)
+                .article__message
+                    margin-top: 1.125rem
+                .article__body
+                    margin-top: 1.5rem
+            .author
+                .author__status
+                    margin-top: 1px
+
+                
+        // &:nth-child(1)
+        //     .article__body
+            
+
+
+// @media screen and (min-width: 48rem)
+//     section
+//         padding: 10rem
+//         grid-template-columns: 1fr 1fr 1fr
+//         grid-tamplate-rows: 1fr 1fr 1fr
+//         grid-template-areas: "one one two" "three four four" "five five five"
